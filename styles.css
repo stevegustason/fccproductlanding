@@ -1,0 +1,195 @@
+html, body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1000;
+  height: 150px;
+  background-color: white;
+}
+
+#header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "left right";
+}
+
+#header-img {
+  grid-area: left;
+}
+
+#logotext {
+  font-family: 'Amatic SC', cursive;
+  font-size: 48px;
+  grid-area: left;
+  justify-self: center;
+}
+
+#nav-bar {
+  grid-area: right;
+  justify-self: center;
+  align-self: center;
+}
+
+.nav-link {
+  margin: 50px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: solid 1px black;
+}
+
+main {
+  margin-top: 150px;
+  text-align: center;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -250px;
+    visibility: hidden;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+#pricinggrid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "left1 mid right1";
+  grid-gap: 20px;
+}
+
+#mouse1 {
+  grid-area: left1;
+  justify-self: start;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+#mouse2 {
+  grid-area: mid;
+  justify-self: center;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+#mouse3 {
+  grid-area: right1;
+  justify-self: end;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  border: none;
+  background-color: #800000;
+  color: white;
+  font-size: 18px;
+}
+
+#contacttext {
+  margin-top: 50px;
+}
+
+input {
+  margin: 10px;
+  padding: 2px;
+}
+
+#submit {
+  height: 30px;
+  width: 75px;
+  border-radius: 5px;
+  border: none;
+  background-color: #800000;
+  color: white;
+  font-size: 14px;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+#footertext {
+  padding-top: 15px;
+}
+
+@media (max-width: 1000px) {
+
+  #header-img {
+  display: none;
+}
+
+  .nav-link {
+  margin: 5px;
+}
+
+  #video {
+    width: 100%;
+    height: 50%;
+  }
+
+  #pricinggrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+
+  #mouse1 {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#mouse2 {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+#mouse3 {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
